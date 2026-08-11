@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suffrage Sojourn has moved</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://mglearn.github.io/sojourn/">
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:24px;background:#102a2d;color:#f6efdf;
+    font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+  .box{max-width:34rem;text-align:center}
+  h1{font-size:1.5rem;margin:0 0 .5rem}
+  p{margin:0 0 1.25rem;color:rgba(246,239,223,.78)}
+  a.go{display:inline-block;padding:.7rem 1.4rem;border-radius:10px;
+    background:#e9bd72;color:#102a2d;font-weight:700;text-decoration:none}
+  a.go:hover,a.go:focus-visible{background:#fffdf8}
+  code{font-size:.9em;color:rgba(246,239,223,.6);word-break:break-all}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>Suffrage Sojourn has moved</h1>
+    <p>This activity now lives at its permanent home on the Learning Activities Hub.
+       You should be redirected automatically.</p>
+    <p><a class="go" href="https://mglearn.github.io/sojourn/">Go to Suffrage Sojourn</a></p>
+    <p><code>https://mglearn.github.io/sojourn/</code></p>
+  </div>
+  <script>
+    // Served for any unmatched path under /sojourn/. Carry the sub-path across so
+    // deep links land in the same place at the new home; fall back to the root.
+    (function () {
+      var base = "https://mglearn.github.io/sojourn/";
+      var rest = location.pathname.replace(/^\/sojourn\/?/, "");
+      location.replace(base + rest + location.search + location.hash);
+    })();
+  </script>
+</body>
+</html>
